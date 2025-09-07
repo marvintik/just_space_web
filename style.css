@@ -8,8 +8,8 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f8f9fa;
+  color: #fff;
+  background-color: #121212;
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #0056b3;
+  color: #e0d7b8;
 }
 
 .btn {
@@ -35,26 +35,19 @@ a {
 .btn-primary {
   background: #0056b3;
   color: white;
+  border: none;
 }
 
 .btn-primary:hover {
   background: #004085;
 }
 
-.btn-secondary {
-  background: #6c757d;
-  color: white;
-}
-
-.btn-secondary:hover {
-  background: #5a6268;
-}
-
 /* Header */
 .header {
-  background: #f1f1f1;
+  background: rgba(0,0,0,0.8);
   padding: 10px 0;
   font-size: 0.9rem;
+  color: #e0d7b8;
 }
 
 .header-content {
@@ -66,28 +59,24 @@ a {
 }
 
 .socials a {
-  color: #555;
+  color: #e0d7b8;
   margin: 0 8px;
   font-size: 1.2rem;
 }
 
 .socials a:hover {
-  color: #0056b3;
+  color: #ffd700;
 }
 
 .contact-info span {
   margin: 0 15px;
-  color: #555;
-}
-
-.contact-info a {
-  color: #555;
+  color: #e0d7b8;
 }
 
 /* Navbar */
 .navbar {
-  background: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.8);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -103,7 +92,8 @@ a {
 .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #0056b3;
+  color: #e0d7b8;
+  text-transform: uppercase;
 }
 
 .nav-menu {
@@ -113,13 +103,13 @@ a {
 }
 
 .nav-menu a {
-  color: #333;
+  color: #e0d7b8;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-menu a:hover {
-  color: #0056b3;
+  color: #ffd700;
 }
 
 .menu-toggle {
@@ -133,113 +123,67 @@ a {
 .menu-toggle span {
   width: 25px;
   height: 3px;
-  background: #333;
+  background: #e0d7b8;
   margin: 3px 0;
   transition: 0.3s;
 }
 
 /* Hero */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x600?text=Just+Space') no-repeat center center/cover;
+  background: url('https://via.placeholder.com/1920x600?text=Правосуддя') no-repeat center center/cover;
+  background-color: rgba(0,0,0,0.7);
   color: white;
   text-align: center;
   padding: 120px 20px;
+  position: relative;
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  color: #e0d7b8;
 }
 
-/* Services */
-.services {
-  padding: 80px 0;
-  text-align: center;
+.services-list {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  text-align: left;
 }
 
-.services h2 {
-  margin-bottom: 40px;
-  font-size: 2rem;
-  color: #333;
+.services-list li {
+  margin: 10px 0;
+  color: #e0d7b8;
 }
 
-.slider {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.slide {
-  display: none;
-  text-align: center;
-}
-
-.slide.active {
-  display: block;
-}
-
-.service-card {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  margin: 0 auto;
-  max-width: 400px;
-}
-
-.service-card i {
-  color: #0056b3;
-  margin-bottom: 15px;
-}
-
-.service-card h3 {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.slider-controls {
-  margin-top: 30px;
-}
-
-.slider-controls button {
-  background: #0056b3;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  margin: 0 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.slider-controls button:hover {
-  background: #004085;
+.services-list i {
+  color: #ffd700;
+  margin-right: 10px;
 }
 
 /* About */
 .about {
   padding: 80px 0;
-  background: #e9ecef;
+  background: #1a1a1a;
+  color: #e0d7b8;
 }
 
 .about-content {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .about-content h2 {
   margin-bottom: 20px;
   font-size: 2rem;
-  color: #333;
+  color: #e0d7b8;
 }
 
 .about-content p {
@@ -247,125 +191,279 @@ a {
   font-size: 1.1rem;
 }
 
-.about-image {
-  text-align: center;
+.principles {
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 20px;
 }
 
-.about-image img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.principles li {
+  margin: 10px 0;
+  color: #e0d7b8;
 }
 
-/* Achievements */
-.achievements {
+.principles i {
+  color: #ffd700;
+  margin-right: 10px;
+}
+
+/* Services */
+.services {
   padding: 80px 0;
-  text-align: center;
-  background: white;
+  background: #121212;
+  color: #e0d7b8;
 }
 
-.achievements h2 {
+.services h2 {
   margin-bottom: 40px;
   font-size: 2rem;
+  color: #e0d7b8;
 }
 
-.infographic {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.infographic-item {
-  background: #0056b3;
-  color: white;
-  padding: 30px;
-  border-radius: 10px;
-  width: 200px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.infographic-item .number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  display: block;
-  margin-bottom: 10px;
-}
-
-/* Partners */
-.partners {
-  padding: 80px 0;
-  background: #f8f9fa;
-  text-align: center;
-}
-
-.partners h2 {
-  margin-bottom: 40px;
-  font-size: 2rem;
-}
-
-.partner-cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.partner-card {
-  background: white;
+.service-card {
+  background: rgba(0,0,0,0.5);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+  border: 1px solid #333;
 }
 
-.partner-card img {
-  width: 100%;
-  border-radius: 8px;
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffd700;
+}
+
+.service-card i {
+  font-size: 2.5rem;
+  color: #ffd700;
   margin-bottom: 15px;
 }
 
-.partner-card h4 {
+.service-card h3 {
   margin-bottom: 10px;
-  color: #333;
+  color: #e0d7b8;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Pricing */
+.pricing {
+  padding: 80px 0;
+  background: #1a1a1a;
+  color: #e0d7b8;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  font-size: 1rem;
+}
+
+.price-table th,
+.price-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.price-table th {
+  background: #0056b3;
+  color: white;
+}
+
+.price-table tr:nth-child(even) {
+  background: rgba(0,0,0,0.2);
+}
+
+.note {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+/* Outsourcing */
+.outsourcing {
+  padding: 80px 0;
+  background: #121212;
+  color: #e0d7b8;
+}
+
+.outsourcing-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.out-box {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.out-box h3 {
+  margin-bottom: 15px;
+  color: #e0d7b8;
+}
+
+.out-box ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.out-box li {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.formats {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid #333;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Team */
+.team {
+  padding: 80px 0;
+  background: #1a1a1a;
+  color: #e0d7b8;
+}
+
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.team-card {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.team-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  margin: 15px 0;
+  text-align: center;
+  color: #e0d7b8;
+}
+
+.team-card p {
+  margin: 0;
+  padding: 0 15px 15px;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* Reviews */
+.reviews {
+  padding: 80px 0;
+  background: #121212;
+  color: #e0d7b8;
+}
+
+.review-card {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+.review-card p {
+  margin-bottom: 15px;
+  color: #ccc;
+  font-style: italic;
+}
+
+.review-card strong {
+  color: #e0d7b8;
 }
 
 /* Contact */
 .contact {
   padding: 80px 0;
-  background: #e9ecef;
-}
-
-.contact h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
+  background: #1a1a1a;
+  color: #e0d7b8;
 }
 
 .contact-info {
-  text-align: center;
   margin-bottom: 30px;
-  font-size: 1.1rem;
+  text-align: center;
 }
 
 .contact-info p {
   margin: 10px 0;
-}
-
-.contact-info a {
-  color: #0056b3;
+  color: #e0d7b8;
 }
 
 .map {
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  margin-bottom: 30px;
+}
+
+.form-container {
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.form-container h3 {
+  margin-bottom: 20px;
+  color: #e0d7b8;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  background: #222;
+  color: white;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  width: 100%;
 }
 
 /* Footer */
 .footer {
-  background: #333;
-  color: white;
+  background: #000;
+  color: #e0d7b8;
   text-align: center;
   padding: 20px 0;
 }
@@ -375,28 +473,24 @@ a {
 }
 
 .footer-socials a {
-  color: white;
+  color: #e0d7b8;
   margin: 0 10px;
   font-size: 1.2rem;
 }
 
 .footer-socials a:hover {
-  color: #007bff;
+  color: #ffd700;
 }
 
 /* Мобільна версія */
 @media (max-width: 768px) {
   .header-content,
   .nav-container,
-  .about {
+  .about,
+  .contact {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  .contact-info span {
-    display: block;
-    margin: 5px 0;
   }
 
   .nav-menu {
@@ -419,13 +513,11 @@ a {
     font-size: 2.2rem;
   }
 
-  .infographic {
-    flex-direction: column;
-    align-items: center;
+  .service-grid {
+    grid-template-columns: 1fr;
   }
 
-  .infographic-item {
-    width: 80%;
-    max-width: 300px;
+  .outsourcing-content {
+    flex-direction: column;
   }
 }
