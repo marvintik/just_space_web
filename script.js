@@ -29,3 +29,19 @@ menuToggle.addEventListener('click', () => {
   navMenu.classList.toggle('active');
   menuToggle.classList.toggle('active');
 });
+
+// Мобільне меню
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  menuToggle.classList.toggle('active');
+});
+
+// Форма контактів
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Дякуємо! Ваше повідомлення надіслано.');
+  this.reset();
+});
