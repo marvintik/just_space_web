@@ -60,7 +60,7 @@ a {
 
 .logo-container {
   flex: 1;
-  min-width: 150px;
+  min-width: 100px;
 }
 
 .logo {
@@ -507,6 +507,11 @@ a {
     text-align: center;
   }
 
+  .contact-info {
+    display: flex;
+    flex-flow: column;
+}
+
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -523,10 +528,20 @@ a {
     display: flex;
   }
 
+  .hero {
+    background-position: -1100px;
+  }
+
+  .hero-text {
+  background: #252331;
+  opacity: 75%;
+}
+
   .hero-content {
     width: 100%;
     text-align: center;
     padding: 0 20px;
+    gap: 0;
   }
 
   .hero-text h1 {
