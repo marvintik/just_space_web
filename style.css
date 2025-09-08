@@ -48,9 +48,6 @@ a {
   padding: 10px 0;
   font-size: 0.9rem;
   color: #e7cea5;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .header-content {
@@ -67,7 +64,7 @@ a {
 }
 
 .logo {
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 
@@ -100,6 +97,22 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-menu a {
+  color: #e0d7b8;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffd700;
 }
 
 .menu-toggle {
